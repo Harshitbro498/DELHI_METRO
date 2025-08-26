@@ -8,7 +8,7 @@
 // funtion to read all lines from a text file.
 void load_lines(vector <string>& lines) {
     string line;
-    ifstream myfile("C:\\Users\\EliteBook\\Desktop\\Delhi_Metro_Project\\Resources\\example.txt");
+    ifstream myfile("Resources/example.txt");
     if (myfile.is_open())
     {
         while (getline(myfile, line))
@@ -31,7 +31,7 @@ void load_lines(vector <string>& lines) {
 
 //function to make hash map of stations with their line.
 void hashes(map<pairstr, int>& result, vector<string>& station_name) {
-    ifstream myfile("C:\\Users\\EliteBook\\Desktop\\Delhi_Metro_Project\\Resources\\stations.txt");
+    ifstream myfile("Resources/stations.txt");
     if (myfile.is_open())
     {
         string full;
@@ -115,7 +115,7 @@ void line_hash_function(map<int, string>& line_num, vector<string>& line) {
 //Function to make adjacency matrix for the graph 
 void graph_function(vector <vector<int>>& graph) {
     string l;
-    ifstream myfile("C:\\Users\\EliteBook\\Desktop\\Delhi_Metro_Project\\Resources\\matrix.txt");
+    ifstream myfile("Resources/matrix.txt");
     if (myfile.is_open())
     {
         int i = 0;
